@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: logger-api
+  description: the logger-api micro-service
+  labels:
+    nexthink.com/type: tooling
+    nexthink.com/technology: micronaut
+  annotations:
+    nexthink.com/service-discovery: logger-api
+  tags:
+    - java
+spec:
+  type: service
+  lifecycle: production
+  owner: architecture
+  system: multi-tenant platform
